@@ -13,7 +13,7 @@ export const Introduction = (props: { report: string }) => {
         <Link fontSize={"small"} color={'blue.300'} href='https://github.com/mahaxyz/' target='_blank'>Share</Link>
       </Box>
 
-      <Text fontSize="small">
+      <Text fontSize="small" fontStyle={"italic"} opacity={0.7}>
         This is the report made by Jeremy on Jan 1st 2025 about the MAHA protocol, his thoughts and decisions
         on what to do next with the protocol.
       </Text>

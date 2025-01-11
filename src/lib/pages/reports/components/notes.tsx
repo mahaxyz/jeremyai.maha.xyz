@@ -3,7 +3,10 @@ import { Grid, Heading, Text } from '@chakra-ui/react';
 export const Notes = () => {
   return (
     <Grid>
-      <Heading mb={2} as="h3" fontWeight="bold">Jeremy&apos;s Observations</Heading>
+      <Heading mb={2} as="h3" fontWeight="bold">My Observations</Heading>
+      <Text mb={2} fontSize="small" fontStyle={"italic"} opacity={0.7}>
+        These are the observations I have made using the information above.
+      </Text>
       <Text mb={2} fontSize="small">
         The sharp 50% drop in ZAI’s liquidity across Curve, Uniswap, and Aerodrome suggests a
         combination of LPs withdrawing funds, possibly due to reduced incentives,

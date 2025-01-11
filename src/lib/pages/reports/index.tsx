@@ -15,7 +15,7 @@ export const Report = (props: { report: string }) => {
     >
 
       <Introduction report={props.report} />
-      <hr />
+      {/* <hr /> */}
       <ProtocolData />
       <hr />
       <Notes />
