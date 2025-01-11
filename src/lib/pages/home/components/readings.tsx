@@ -1,4 +1,4 @@
-import { Grid, Heading, Text } from '@chakra-ui/react';
+import { Grid, Heading, Link, List, Text } from '@chakra-ui/react';
 
 export const Readings = () => {
   return (
@@ -13,6 +13,12 @@ export const Readings = () => {
         for the MAHA protocol based on these reports. The goal is to understand progress and maximze growth of the
         ZAI stablecoin in these reports.
       </Text>
+      <br />
+      <List.Root as="ul">
+        <List.Item><Link href='/report/3' color={"blue.300"}>Jan 3rd 2025</Link></List.Item>
+        <List.Item><Link href='/report/2' color={"blue.300"}>Jan 2nd 2025</Link></List.Item>
+        <List.Item><Link href='/report/1' color={"blue.300"}>Jan 1st 2025</Link></List.Item>
+      </List.Root>
     </Grid>
   );
 };
