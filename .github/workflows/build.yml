@@ -7,7 +7,7 @@ permissions:
   contents: write
 
 jobs:
-  build_fork_zerolend:
+  build:
     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
     steps:
