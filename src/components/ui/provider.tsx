@@ -9,7 +9,7 @@ import { ColorModeProvider } from './color-mode';
 export function Provider(props: React.PropsWithChildren) {
   return (
     <ChakraProvider value={customTheme}>
-      <ColorModeProvider>{props.children}</ColorModeProvider>
+      <ColorModeProvider forcedTheme='dark'>{props.children}</ColorModeProvider>
     </ChakraProvider>
   );
 }

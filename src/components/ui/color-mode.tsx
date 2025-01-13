@@ -36,7 +36,7 @@ export function ColorModeIcon() {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
-interface ColorModeButtonProps extends Omit<IconButtonProps, 'aria-label'> {}
+interface ColorModeButtonProps extends Omit<IconButtonProps, 'aria-label'> { }
 
 export const ColorModeButton = forwardRef<
   HTMLButtonElement,
