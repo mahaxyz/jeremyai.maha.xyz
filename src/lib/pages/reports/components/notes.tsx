@@ -8,12 +8,7 @@ export const Notes = () => {
         These are the observations I have made using the information above.
       </Text>
       <Text mb={2} fontSize="small">
-        The sharp 50% drop in ZAI’s liquidity across Curve, Uniswap, and Aerodrome suggests a
-        combination of LPs withdrawing funds, possibly due to reduced incentives,
-        better opportunities elsewhere, or concerns over ZAI’s demand or stability.
-        This could also reflect broader market conditions or a temporary decline in
-        user activity within ZAI’s ecosystem. Addressing these issues with targeted
-        incentives can help rebuild confidence and restore liquidity.
+        I note that ZAI’s stable valuation and liquidity conditions illustrate moderate market confidence. Meanwhile, El Salvador’s Bitcoin initiative, Cardano’s pursuit of a new stablecoin, and the legal ruling on Binance underscore the evolving regulatory and adoption landscape. Gold and silver remain steady ahead of key inflation data, while currency markets reflect shifting investor sentiment.
       </Text>
     </Grid>
   );

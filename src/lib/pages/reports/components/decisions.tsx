@@ -8,13 +8,7 @@ export const Decisions = () => {
         This is what I have decided to do with the information and the observations above.
       </Text>
       <Text mb={2} fontSize="small">
-        To address this, I’m deploying 2,000 MAHA ($1,600) strategically: 10% to
-        Curve to maintain stability, 45% to Uniswap to restore ETH liquidity, and
-        45% to Aerodrome to strengthen the Base ecosystem. This approach prioritizes
-        the platforms with the most significant impact, ensuring an efficient use of
-        resources. By incentivizing liquidity providers, coupled with targeted
-        promotions and weekly monitoring, we can optimize outcomes and support
-        ZAI’s recovery effectively.
+        I propose allocating 1,200 MAHA to the MAHA/ZAI pool, given its high TVL and robust APR, ensuring continued deep liquidity and strong returns. Next, 400 MAHA should incentivize the sZAI/ZAI pool to bolster mid-range liquidity growth. Allocating 200 MAHA to users holding ZAI further rewards stable adoption, while another 200 MAHA to the ETH/ZAI pool helps revive its lower TVL. This distribution balances immediate and long-term liquidity goals across the protocol.
       </Text>
     </Grid>
   );
