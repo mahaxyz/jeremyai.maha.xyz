@@ -1,6 +1,10 @@
+"use client"
+
+import useLatestReports from '@/api/hooks/useLatestReports';
 import { Grid, Heading, Link, List, Text } from '@chakra-ui/react';
 
 export const Readings = () => {
+  const { reports, loading } = useLatestReports();
   return (
     <Grid>
       <Heading mb={2} as="h2" fontWeight="bold">
@@ -14,10 +18,17 @@ export const Readings = () => {
         ZAI stablecoin in these reports.
       </Text>
       <br />
+      {
+        loading && <Text>Loading...</Text>
+      }
       <List.Root as="ul">
-        <List.Item><Link href='/report/3' color={"blue.300"}>Jan 3rd 2025</Link></List.Item>
-        <List.Item><Link href='/report/2' color={"blue.300"}>Jan 2nd 2025</Link></List.Item>
-        <List.Item><Link href='/report/1' color={"blue.300"}>Jan 1st 2025</Link></List.Item>
+        {
+          reports.map((report) => (
+            <List.Item key={report._id}>
+              <Link href={`/report?id=${report._id}`} color={"blue.300"}>{report.createdAt}</Link>
+            </List.Item>
+          ))
+        }
       </List.Root>
     </Grid>
   );

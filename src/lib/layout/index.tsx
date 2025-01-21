@@ -2,6 +2,7 @@
 
 import { Box } from '@chakra-ui/react';
 import type { ReactNode } from 'react';
+import '../styles/globals.css';
 
 // import { Footer } from './components/footer';
 // import { Header } from './components/header';

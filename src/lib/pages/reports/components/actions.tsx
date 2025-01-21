@@ -1,6 +1,8 @@
+import { IReport } from '@/api/reports';
 import { Grid, Heading, Link, List, Text } from '@chakra-ui/react';
 
-export const Actions = () => {
+export const Actions = (props: { report: IReport }) => {
+  console.log(props.report);
   return (
     <Grid>
       <Heading mb={2} as="h3" fontWeight="bold">Actions</Heading>

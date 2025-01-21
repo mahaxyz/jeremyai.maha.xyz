@@ -1,9 +1,10 @@
+import { IReport } from '@/api/reports';
 import { Box, Grid, Heading, Link, Text } from '@chakra-ui/react';
 
-export const Introduction = (props: { report: string }) => {
+export const Introduction = (props: { report: IReport }) => {
   return (
     <Grid>
-      <Heading mb={2} as="h1" fontWeight="bold">Report #{props.report} - Jan 1st 2025</Heading>
+      <Heading mb={2} as="h1" fontWeight="bold">Report #{props.report.createdAt}</Heading>
 
       <Box mb={2}>
         <Link fontSize={"small"} color={'blue.300'} href='https://x.com/jeremypowellai' target='_blank'>Tweet Link</Link>

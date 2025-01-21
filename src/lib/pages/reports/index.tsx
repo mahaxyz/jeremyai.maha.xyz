@@ -1,11 +1,21 @@
+"use client"
+
 import { Flex } from '@chakra-ui/react';
 import { Introduction } from './components/introduction';
 import { ProtocolData } from './components/protocoldata';
 import { Notes } from './components/notes';
 import { Decisions } from './components/decisions';
 import { Actions } from './components/actions';
+import { useSearchParams } from 'next/navigation';
+import useReport from '@/api/hooks/useReport';
 
-export const Report = (props: { report: string }) => {
+export const Report = () => {
+  const query = useSearchParams();
+  const { report, loading } = useReport(query.get('id'));
+
+  if (loading) return <div>loading...</div>
+  if (!report) return <div>report not found...</div>
+
   return (
     <Flex
       direction="column"
@@ -13,16 +23,15 @@ export const Report = (props: { report: string }) => {
       mb={8}
       w="full"
     >
-
-      <Introduction report={props.report} />
+      <Introduction report={report} />
       {/* <hr /> */}
-      <ProtocolData />
+      <ProtocolData report={report} />
       <hr />
-      <Notes />
+      <Notes report={report} />
       <hr />
-      <Decisions />
+      <Decisions report={report} />
       <hr />
-      <Actions />
+      <Actions report={report} />
     </Flex>
   );
 };
