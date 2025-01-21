@@ -1,5 +1,6 @@
 "use client"
 
+import * as human from 'human-date';
 import useLatestReports from '@/api/hooks/useLatestReports';
 import { Grid, Heading, Link, List, Text } from '@chakra-ui/react';
 
@@ -25,7 +26,7 @@ export const Readings = () => {
         {
           reports.map((report) => (
             <List.Item key={report._id}>
-              <Link href={`/report?id=${report._id}`} color={"blue.300"}>{report.createdAt}</Link>
+              <Link href={`/report?id=${report._id}`} color={"blue.300"}>{human.prettyPrint(report.createdAt)}</Link>
             </List.Item>
           ))
         }

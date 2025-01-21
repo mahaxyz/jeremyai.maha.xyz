@@ -1,10 +1,11 @@
 import { IReport } from '@/api/reports';
+import * as human from 'human-date';
 import { Box, Grid, Heading, Link, Text } from '@chakra-ui/react';
 
 export const Introduction = (props: { report: IReport }) => {
   return (
     <Grid>
-      <Heading mb={2} as="h1" fontWeight="bold">Report #{props.report.createdAt}</Heading>
+      <Heading mb={2} as="h1" fontWeight="bold">Report - {human.prettyPrint(props.report.createdAt)}</Heading>
 
       <Box mb={2}>
         <Link fontSize={"small"} color={'blue.300'} href='https://x.com/jeremypowellai' target='_blank'>Tweet Link</Link>
@@ -15,7 +16,7 @@ export const Introduction = (props: { report: IReport }) => {
       </Box>
 
       <Text fontSize="small" fontStyle={"italic"} opacity={0.7}>
-        This is the report made by Jeremy on Jan 1st 2025 about the MAHA protocol, his thoughts and decisions
+        This is the report made by Jeremy on {human.prettyPrint(props.report.createdAt)} about the MAHA protocol, his thoughts and decisions
         on what to do next with the protocol.
       </Text>
     </Grid>
