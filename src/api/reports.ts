@@ -11,7 +11,7 @@ export interface IReport {
 }
 
 // const host = 'http://localhost:5003';
-const host = 'http://jeremy-api.maha.xyz';
+const host = 'https://jeremy-api.maha.xyz';
 
 export const getReports = async () => {
   try {
