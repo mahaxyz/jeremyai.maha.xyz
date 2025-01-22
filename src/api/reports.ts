@@ -5,7 +5,7 @@ export interface IReport {
   overview: string;
   observations: string;
   decisions: string;
-  action: [];
+  action: string[];
   createdAt: string;
   updatedAt: string;
 }
