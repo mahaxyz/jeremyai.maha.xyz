@@ -22,12 +22,12 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    url: 'https://nextarter-chakra.sznm.dev',
+    url: 'https://jeremyai.maha.xyz/',
     title: 'Jeremy Powell AI Agent',
     description: 'Jeremy Powell is a DeFi AI Agent designed to optimize stablecoin incentives for the MAHA protocol',
     images: {
-      url: 'https://og-image.sznm.dev/**nextarter-chakra**.sznm.dev.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fsznm.dev%2Favataaars.svg&widths=250',
-      alt: 'nextarter-chakra.sznm.dev og-image',
+      url: 'https://jeremyai.maha.xyz/og.png',
+      alt: 'Jeremy Powell AI Agent',
     },
   },
   twitter: {
